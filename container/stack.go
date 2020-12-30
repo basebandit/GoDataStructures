@@ -88,7 +88,7 @@ func (s *LinkedStack) Pop() (interface{}, error) {
 
 //Push adds a new element on to the top of the stack.
 func (s *LinkedStack) Push(e interface{}) {
-	s.topPtr.item = &node{item: e}
+	s.topPtr = &node{item: e, next: s.topPtr}
 	s.count++
 }
 
