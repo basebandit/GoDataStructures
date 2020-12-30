@@ -41,7 +41,12 @@ Requires using an array to hold the contents of the stack and a marker to keep t
 > If a static (fixed-size) array is used, then the stack can become full. We wouldn't want that to happen now, would we? If a
 > dynamic (resizable) array is used, then the stack is essentially unbounded. Sounds like something we would want to use, right?
 
-We will use a dnamic array (Slice) as the underlying store to hold the stack elements. The size of the store will be the size of the stack and we will resize the dynamic array when elements are pushed of popped from the stack. We choose this design because resizing slices is inexpensive in Go (unless the underlying array needs to be expanded).
+We will use a dynamic array (Slice) as the underlying store to hold the stack elements. The size of the store will be the size of the stack and we will resize the dynamic array when elements are pushed of popped from the stack. We choose this design because resizing slices is inexpensive in Go (unless the underlying array needs to be expanded).
+
+
+### Linked Implementation of the Stack ADT
+
+Uses a  linked data structure to hold the values of the ADT. The linked structure used for the linked implementation of a stack ADT is a singly linked list. Nodes in the `singly linked list` need only contain a value of type `T` and a link to the next node. The top element of the stack is stored at the head of the list, so the only data that the stack data structure must keep track of is the pointer to the head of the list.
 
 
 
