@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestStack(t *testing.T) {
+func TestArrayStack(t *testing.T) {
 
 	var (
 		tPush  = "Push Test"
