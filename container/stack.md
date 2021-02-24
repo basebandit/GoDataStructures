@@ -1,6 +1,6 @@
 # The Stack Abstract Data Type
 
-Stacks are containers, and as such they hold values of some type T, where T is the type of elements held in the stack.
+Stacks are containers, and as such they hold values of some type T, where T is the type of elements held in the stack. You cannot traverse elements in a Stack, you can only access, insert or remove elements at only one end, called the **top**
 
 ## Essential operations supported by the Stack ADT
 - push(t T) - Add element t at the top of the stack. This is done implicitly.
