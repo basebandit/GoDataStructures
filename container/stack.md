@@ -48,7 +48,11 @@ We will use a dynamic array (Slice) as the underlying store to hold the stack el
 
 Uses a  linked data structure to hold the values of the ADT. The linked structure used for the linked implementation of a stack ADT is a singly linked list. Nodes in the `singly linked list` need only contain a value of type `T` and a link to the next node. The top element of the stack is stored at the head of the list, so the only data that the stack data structure must keep track of is the pointer to the head of the list.
 
+Each node in a LinkedStack contains both an element and a link, so a LinkedStack does use more space (perhaps twice as much space)
+as an ArrayStack to store a single element. On the other hand, an ArrayStack typically allocates more space than it uses at any given time to store data 
 
+Often there will be at least as many unused elements of the underlying storage array as there are used elements. This is because the ArrayStack must have enough capacity to accomodate the largest number of elements ever pushed on the stack, even when many elements have subsequently been popped from the stack. 
 
+Therefore then, an ArrayStack will typically use more space than a LinkedStack.
 
 
