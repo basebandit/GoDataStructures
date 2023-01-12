@@ -1,6 +1,3 @@
-// Copyright  Canonical Ltd.
-// Licensed under the AGPLv3, see LICENCE file for details.
-
 package selectionsort
 
 // selectionSort searches for the smallest element and swaps it with the current index,

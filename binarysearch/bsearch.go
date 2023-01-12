@@ -1,6 +1,3 @@
-// Copyright  Canonical Ltd.
-// Licensed under the AGPLv3, see LICENCE file for details.
-
 package binarysearch
 
 // binarySearch finds the target integer in the array and returns its index,otherwise it returns -1
