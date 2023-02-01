@@ -4,7 +4,12 @@ package permutation
 // other.
 // time complexity O(n) space complexity O(1)
 func isPermutation(s1, s2 string) bool {
+	if len(s1) != len(s2) {
+		return false
+	}
+	
 	var totalAsciiVal1 int
+
 	for i := 0; i < len(s1); i++ {
 		totalAsciiVal1 += int(s1[i])
 	}
@@ -22,6 +27,10 @@ func isPermutation(s1, s2 string) bool {
 
 // time complexity O(n) space complexity O(n)
 func isPermutation2(s1, s2 string) bool {
+	if len(s1) != len(s2) {
+		return false
+	}
+
 	count := map[rune]int{}
 
 	for _, runeValue := range s1 {
